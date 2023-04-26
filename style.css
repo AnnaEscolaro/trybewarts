@@ -25,3 +25,9 @@ main {
 #name-last-name {
   display: flex;
 }
+
+#container-section {
+  display: flex;
+  flex-direction: column;
+}
+

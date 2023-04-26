@@ -1,41 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Trybewarts</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <title>Trybewarts</title>
-</head>
-
-<body>
-  <header class="header">
-    <img src="images/trybewarts-header-logo.svg" class="trybewarts-header-logo">
-    <h1 id="trybewarts-header-title">Trybewarts</h1>
-    <form action="" class="trybewarts-login" method="get">
-      <input type="email" name="email" id="email" placeholder="Email">
-      <input type="password" name="password" id="password" placeholder="Senha">
-      <button id="button">Entrar</button>
-    </form>
-  </header>
-  <main>
-    <form action="" id="evaluation-form" method="get">
-      <div id="name-last-name">
-        <input type="name" id="input-name" placeholder="Nome">
-        <input type="name" id="input-lastname" placeholder="Sobrenome">
+  <body>
+    <header class="header">
+      <img
+        src="images/trybewarts-header-logo.svg"
+        class="trybewarts-header-logo"
+      />
+      <h1 id="trybewarts-header-title">Trybewarts</h1>
+      <form action="" class="trybewarts-login" method="get">
+        <input type="email" name="email" id="email" placeholder="Email" />
+        <input
+          type="password"
+          name="password"
+          id="password"
+          placeholder="Senha"
+        />
+        <button id="button">Entrar</button>
+      </form>
+    </header>
+    <main>
+      <form action="" id="evaluation-form" method="get">
+        <div id="name-last-name">
+          <input type="name" id="input-name" placeholder="Nome" />
+          <input type="name" id="input-lastname" placeholder="Sobrenome" />
+        </div>
+        <div id="email-casas">
+        <input type="email" id="input-email" placeholder="Email" />
+        <label id="casas">Casa: </label>
+        <select name="casas" id="house">
+          <option id="gitnoria-house" value="Gitnória">Gitnória</option>
+          <option id="reactpuff-house" value="Reactpuff">Reactpuff</option>
+          <option id="corvinode-house" value="Corvinode">Corvinode</option>
+          <option id="pytherina-house" value="Pytherina">Pytherina</option>
+        </select>
       </div>
-      <input type="email" id="input-email" placeholder="Email">
-    </form>
-    <img src="images/trybewarts-colored.svg" id="trybewarts-forms-logo">
-    <select name="casas" id="house">
-      <option id="gitnoria-house" value="Gitnória">Gitnória</option>
-      <option id="reactpuff-house" value="Reactpuff">Reactpuff</option>
-      <option id="corvinode-house" value="Corvinode">Corvinode</option>
-      <option id="pytherina-house" value="Pytherina">Pytherina</option>
-    </select>
-  </main>
-  <script src="script.js"></script>
-</body>
+        <label id="label-family">Qual sua família?</label>
 
+        <section id="container-section">
+          <input type="radio" name="family" id="family" value="Frontend" />
+          <label for="family" id="">Frontend</label>
+
+          <input type="radio" name="family" id="family" value="Backend" />
+          <label for="family" id="">Backend</label>
+
+          <input type="radio" name="family" id="family" value="FullStack" />
+          <label for="family" id="">FullStack</label>
+        </section>
+      </form>
+
+      <img src="images/trybewarts-colored.svg" id="trybewarts-forms-logo" />
+    </main>
+    <script src="script.js"></script>
+  </body>
 </html>
