@@ -7,3 +7,5 @@ function login() {
     alert('Email ou senha inválidos.');
   }
 }
+
+document.getElementById('button').addEventListener('click', login);
