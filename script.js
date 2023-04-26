@@ -9,3 +9,14 @@ function login() {
 }
 
 document.getElementById('button').addEventListener('click', login);
+
+function habilitarBotao() {
+  const check = document.getElementById('agreement');
+  const botao = document.getElementById('submit-btn');
+  if (check.checked) {
+    botao.removeAttribute('disabled');
+  } else if (check.checked === false) {
+    botao.setAttribute('disabled', 'disabled');
+  }
+}
+document.getElementById('agreement').addEventListener('change', habilitarBotao);
